@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"> </header>
+        <main class="page">
+            <section class="page__form main-page">
+                <div class="main-page__container">
+                    <div class="main-page__body body-page">
+                        <div class="body-page__first-column">
+                            <img src="img/illustration.svg" alt="illustration" class="body-page__image">
+                        </div>
+                        <div class="body-page__second-column">
+                            <div class="second-column__subtitle">
+                                <h6>Any questions?</h6>
+                                <h1 class="second-column__title">Drop us a line</h1>
+                            </div>
+                            <form class="second-column__contact-form contact-form"
+                                action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                                <div class="contact-form__line">
+                                    <div class="contact-form__line--01">
+                                        <label class="contact-form__label" for="name-01">First Name*</label>
+                                        <input class="contact-form__input" id="name-01" required
+                                            placeholder="Your first name" name="fname" type="text">
+                                    </div>
+                                    <div class="contact-form__line--02">
+                                        <label class="contact-form__label" for="name-02">Last Name*</label>
+                                        <input class="contact-form__input" id="name-02" required
+                                            placeholder="Your last name" name="lname" type="text">
+                                    </div>
+                                    <div class="contact-form__line--03">
+                                        <label class="contact-form__label" for="name-03">Email*</label>
+                                        <input class="contact-form__input" id="name-03" required
+                                            placeholder="Your working email" name="email" type="email">
+                                    </div>
+                                    <div class="contact-form__line--04">
+                                        <label class="contact-form__label" for="name-04">Phone</label>
+                                        <input class="contact-form__input" id="name-04" placeholder="Your phone number"
+                                            name="tel" type="tel">
+                                    </div>
+                                    <div class="contact-form__line--05">
+                                        <label class="contact-form__label" for="name-05">Message*</label>
+                                        <textarea class="contact-form__message" id="name-05" required
+                                            placeholder="Your message" name="message" type="text"></textarea>
+                                    </div>
+                                    <div class="contact-form__confirm">
+                                        <div class="contact-form__line--06">
+                                            <input class="contact-form__input-checkbox" id="checkbox" type="checkbox"
+                                                value="yes" required name="checkbox">
+                                            <label class="contact-form__lable-checkbox" for="checkbox">
+                                                <span class="contact-form__text-checkbox">I agree to receive
+                                                    communications from Createx Online School</span>
+                                            </label>
+                                        </div>
+                                        <div class="contact-form__line--07">
+                                            <button class="button-form" type="submit"><span>Send message</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="exp">
+                <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+                    <div class="form__line">
+                        <div class="checkbox">
+                            <input id="car" autocomplete="off" type="checkbox" value="yes" name="car"
+                                class="checkbox__input">
+                            <label for="car" class="checkbox__label">
+                                <span class="checkbox__text">Є тачка?</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <form class="form" method="GET" enctype="multipart/form-data" action="#">
+                    <div class="form__line">
+                        <label class="form__label" for="">Я окремий підпис</label>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label" for="age-01">Введіть ваш вік</label>
+                        <input class="form__input" id="age-01" autocomplete="off" placeholder="Введіть ваш вік"
+                            name="age" type="text">
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label" for="email-01">Введіть ваш E-mail</label>
+                        <input class="form__input" id="email-01" autocomplete="off" placeholder="Введіть ваш E-mail"
+                            name="mail" type="email">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" name="token" value="slklrghakj" type="hidden">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" autocomplete="off" placeholder="Введіть ваш телефон" name="phone"
+                            type="tel">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" autocomplete="off" placeholder="Введіть ваш пароль" name="pass"
+                            type="password">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" autocomplete="off" placeholder="Введіть ваше число" name="digi"
+                            type="number">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" autocomplete="off" name="color" value="#ffffff" type="color">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" autocomplete="off" name="search"
+                            placeholder="Введіть пошуковий запит" type="search">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" autocomplete="off" name="date" type="date">
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" autocomplete="off" name="range" type="range">
+                    </div>
+                    <div class="form__line">
+                        <input id="car-01" class="form__input form__input--chk" required autocomplete="off" name="car"
+                            type="checkbox">
+                        <label class="form__label" for="car-01">Є авто?</label>
+                    </div>
+                    <div class="form__line">
+                        <input id="home-01" checked class="form__input form__input--chk" required autocomplete="off"
+                            name="car" type="checkbox">
+                        <label class="form__label" for="home-01">Є де жити?</label>
+                    </div>
+                    <div class="form__line">
+                        <div class="form__title">Улюблена тваринка</div>
+                        <div class="form__radio">
+                            <input checked class="form__input form__input--radio" id="pet-01" required
+                                autocomplete="off" value="cat" name="pet" type="radio">
+                            <label class="form__label" for="pet-01">Кішка</label>
+                        </div>
+                        <div class="form__radio">
+                            <input class="form__input form__input--radio" id="pet-02" required autocomplete="off"
+                                name="pet" value="dog" type="radio">
+                            <label class="form__label" for="pet-02">Собака</label>
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input" name="file" accept="image/png, image/jpeg" multiple type="file">
+                    </div>
+                    <div class="form__line">
+                        <textarea autocomplete="off" name="message" class="form__area"></textarea>
+                    </div>
+                    <div class="form__line">
+                        <select name="list">
+                            <option value="">Пункт 1</option>
+                            <option value="">Пункт 2</option>
+                            <option value="">Пункт 3</option>
+                            <option value="">Пункт 4</option>
+                            <option value="">Пункт 5</option>
+                        </select>
+                    </div>
+                    <div class="form__line">
+                        <button type="submit">Я кнопка</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>
